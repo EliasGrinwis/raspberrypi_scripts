@@ -11,7 +11,7 @@ def blink(pin):
     time.sleep(0.5)
 
 
-while True:
+for i in raneg(1, 10):
     blink(24)
 
 GPIO.cleanup()
