@@ -15,7 +15,7 @@ def blink(pin):
 while True:
     if (GPIO.input(17) == 1):
         GPIO.output(24, 1)
-        print("Led blinks")
+        print("led blinks")
         time.sleep(0.3)
     else:
         GPIO.output(24, 0)
