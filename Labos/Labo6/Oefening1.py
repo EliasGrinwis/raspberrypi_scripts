@@ -23,7 +23,8 @@ def readadc(adcnum):
 		spi.write_readinto([1,(8+adcnum)<<4,0], r)
 		time.sleep(0.000005)
 		adcout = ((r[1]&3) << 8) + r[2] 
-		return adcout 
+		return adcout
+
  
 while True:
 	tmp0 = readadc(0) # read channel 0 
